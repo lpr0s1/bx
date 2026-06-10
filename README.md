@@ -2,4 +2,4 @@
 
 Partager vos fichiers rapidement et avec précision.
 
-**v0.1**
+**v0.2**
